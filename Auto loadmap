@@ -1,0 +1,5 @@
+while task.wait(0.25) do
+    task.spawn(function()
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";loadmap")
+    end)
+end
